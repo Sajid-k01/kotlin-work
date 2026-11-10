@@ -4,10 +4,9 @@
 
 fun main() {
     // Add your code here
-    val shopping = listOf("Milk", "Bread", "Coffee", "Cat Food")
+    print("Enter a value for x: ")
+    var x = readln().toInt()
+    x = if (x > 100) 100 else x
 
-    println("Coffee" in shopping)
-    println("He" in shopping)
-
-    
+    println(x)
 }

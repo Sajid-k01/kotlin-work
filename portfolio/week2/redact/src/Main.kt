@@ -25,3 +25,10 @@ fun main(args: Array<String>) {
 
     outputFile.writeText(redactedText)
 }
+
+fun redact(originalText : String, textToRedact: String) : String
+{
+    val redactionChar = 'X' 
+    val replacement = redactionChar.toString().repeat(textToRedact.length)
+    return originalText.replace(textToRedact, replacement)
+}

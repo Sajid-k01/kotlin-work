@@ -18,3 +18,9 @@ application {
 tasks.named<JavaExec>("run") {
     standardInput = System.`in`
 }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
